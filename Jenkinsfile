@@ -41,7 +41,7 @@ pipeline {
 			echo 'Pipeline failed'
 		}
 		changed {
-			'Pipeline build result has changed since last execution'
+			echo 'Pipeline build result has changed since last execution'
 		}
 	}
 }
