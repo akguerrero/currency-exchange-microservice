@@ -29,4 +29,19 @@ pipeline {
 			}
 		}
 	}
+
+	post {
+		always {
+			echo 'These message will be always shown'
+		}
+		sucess {
+			echo 'Successfully executed'
+		}
+		failure {
+			echo 'Pipeline failed'
+		}
+		changed {
+			'Pipeline build result has changed since last execution'
+		}
+	}
 }
