@@ -34,7 +34,7 @@ pipeline {
 		always {
 			echo 'These message will be always shown'
 		}
-		sucess {
+		success {
 			echo 'Successfully executed'
 		}
 		failure {
