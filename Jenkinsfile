@@ -52,11 +52,6 @@ pipeline {
 				sh 'mvn package -DskipTests'
 			}
 		}
-		stage('Package') {
-			steps {
-				sh 'mvn package -DskipTests'
-			}
-		}
 		stage('Build Docker Image') {
 			steps {
 				//sh "docker build -t akguerrerok/currency-exchange-devops:${env.BUILD_TAG}"
